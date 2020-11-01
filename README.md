@@ -21,8 +21,6 @@ composer require tailflow/enum
 Here is how enums are defined:
 
 ```php
-<?php
-
 use Tailflow\Enum\Enum;
 
 class Status extends Enum
@@ -36,8 +34,6 @@ class Status extends Enum
 This is how they are used:
 
 ```php
-<?php
-
 $class->setStatus(Status::Inactive);
 ```
 
@@ -46,8 +42,6 @@ $class->setStatus(Status::Inactive);
 By default, enum labels are derived from the constant names. To get enum label, you can use `::getLabel` method on enum class:
 
 ```php
-<?php
-
 // $label will be equal to "OnHold" - the name of the constant
 $label = Status::getLabel(Status::OnHold); 
 ```
@@ -55,7 +49,6 @@ $label = Status::getLabel(Status::OnHold);
 Optionally, you can provide a different label for any given enum value:
 
 ```php
-<?php
 use Tailflow\Enum\Enum;
 
 class Status extends Enum
