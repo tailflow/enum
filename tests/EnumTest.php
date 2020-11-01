@@ -28,7 +28,7 @@ class EnumTest extends TestCase
     public function getting_label_for_non_existing_value()
     {
         $this->expectException(BadMethodCallException::class);
-        $this->expectErrorMessage('There is no value 4 defined for enum Tailflow\Enum\Tests\ExampleEnum, consider adding it in the class definition.');
+        $this->expectExceptionMessage('There is no value 4 defined for enum Tailflow\Enum\Tests\ExampleEnum, consider adding it in the class definition.');
         ExampleEnum::getLabel(4);
     }
 }
