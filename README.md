@@ -37,7 +37,7 @@ This is how they are used:
 $class->setStatus(Status::Inactive);
 ```
 
-### Enum Labels
+### Custom enum labels
 
 By default, enum labels are derived from the constant names. To get enum label, you can use `::getLabel` method on enum class:
 
@@ -67,6 +67,24 @@ class Status extends Enum
 
 // $label will be equal to "waiting" - the custom label defined in "labels" method
 $label = Status::getLabel(Status::OnHold); 
+```
+
+## Listing all enum labels
+
+To get a list of all labels of the enum, you can use `::getLabels` method:
+
+```php
+// $labels will contain the array - ['Inactive', 'Active', 'waiting']
+$labels = Status::getLabels(); 
+```
+
+## Listing all enum values
+
+To get a list of all values of the enum, you can use `::getValues` method:
+
+```php
+// $labels will contain the array - [0, 1, 3]
+$labels = Status::getValues(); 
 ```
 
 ## License
