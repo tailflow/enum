@@ -13,7 +13,7 @@ abstract class Enum
     /**
      * @return string[]
      */
-    public static function labels(): array
+    protected static function labels(): array
     {
         return [];
     }
@@ -42,4 +42,31 @@ abstract class Enum
 
         throw new BadMethodCallException("There is no value {$value} defined for enum {$enumClass}, consider adding it in the class definition.");
     }
+
+    public static function getLabels(): array
+    {
+        $reflectionClass = new ReflectionClass(static::class);
+        $constants = $reflectionClass->getConstants();
+
+        $labels = array_keys($constants);
+
+        return array_map(function (string $label) use ($constants) {
+            $value = $constants[$label];
+
+            if (array_key_exists($value, static::labels())) {
+                return static::labels()[$value];
+            }
+
+            return $label;
+        }, $labels);
+    }
+
+    public static function getValues(): array
+    {
+        $reflectionClass = new ReflectionClass(static::class);
+        $constants = $reflectionClass->getConstants();
+
+        return array_values($constants);
+    }
+
 }

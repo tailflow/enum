@@ -12,7 +12,7 @@ final class ExampleEnum extends Enum
     public const Active = 1;
     public const OnHold = 3;
 
-    public static function labels(): array
+    protected static function labels(): array
     {
         return [
             self::OnHold => 'waiting'
