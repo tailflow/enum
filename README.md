@@ -1,9 +1,7 @@
 <p align="center">
-<a href="https://travis-ci.org/tailflow/enum"><img src="https://travis-ci.org/tailflow/enum.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/tailflow/enum"><img src="https://poser.pugx.org/tailflow/enum/version" alt="Stable Release"></a>
-<a href="https://packagist.org/packages/tailflow/enum"><img src="https://poser.pugx.org/tailflow/enum/license" alt="Stable Release"></a>
+<a href="https://packagist.org/packages/tailflow/enum"><img src="https://img.shields.io/packagist/v/tailflow/enum.svg" alt="Latest Version on Packagist"></a>
+<a href="https://travis-ci.org/tailflow/enum"><img src="https://img.shields.io/travis/tailflow/enum" alt="Build Status on Travis CI"></a>
 </p>
-
 ## Introduction
 
 The package offers strongly typed enums in PHP. In this package, enums are always objects, never constant values on their own. This allows for proper static analysis and refactoring in IDEs.
