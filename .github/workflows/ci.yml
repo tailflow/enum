@@ -1,4 +1,4 @@
-name: tailflow/enum
+name: Test
 
 on:
   push:
