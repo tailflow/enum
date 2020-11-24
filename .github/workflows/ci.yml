@@ -14,7 +14,8 @@ jobs:
     strategy:
       matrix:
         php-version: [ '7.1', '7.2', '7.3', '7.4' ]
-      name: Tests on PHP ${{ matrix.php-version }}
+
+    name: Tests on PHP ${{ matrix.php-version }}
 
     steps:
       - name: Checkout
