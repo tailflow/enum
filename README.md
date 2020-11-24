@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://packagist.org/packages/tailflow/enum"><img src="https://img.shields.io/packagist/v/tailflow/enum.svg" alt="Latest Version on Packagist"></a>
-<a href="https://github.com/tailflow/enum/actions"><img src="https://img.shields.io/github/workflow/status/tailflow/enum/Test" alt="Build Status"></a>
+<a href="https://github.com/tailflow/enum/actions"><img src="https://img.shields.io/github/workflow/status/tailflow/enum/default" alt="Build Status"></a>
 </p>
 
 ## Introduction
